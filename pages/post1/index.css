@@ -1,0 +1,5 @@
+@import '../../css/global-styles.css';
+
+.content > p {
+  margin-top: 20px;
+}
