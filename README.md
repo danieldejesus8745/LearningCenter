@@ -1,5 +1,5 @@
 # Learning Center
-App para armazenar conhecimentos adquiridos de forma estruturada
+App para armazenar de forma estruturada os conhecimentos adquiridos
 
 # Stack
   - HTML
