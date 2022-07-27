@@ -1,0 +1,3 @@
+- Criar zoom das imagens
+
+- Fixar header

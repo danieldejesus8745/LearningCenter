@@ -21,7 +21,34 @@
         <div class="content">
           <h3>Deploy em containers</h3>
           <p><strong>Passo 1: Escrever um Dockerfile ou um docker-compose.yml</strong></p>
-          <p>Esse arquivos dizem ao docker como ele deve criar o container no qual a aplicação será executada.</p>
+          <p>Esses arquivos dizem ao docker como ele deve criar o container no qual a aplicação será executada.</p>
+          <p><strong>Passo 2: Desenvolver a aplicação dentro do container criado pelo Docker</strong></p>
+          <p>Nesse passo crio a primeira versão da minha aplicação.</p>
+          <p><strong>Kubernetes (K8s)</strong></p>
+          <p>O Kubernetes monta containers assim como o Docker, mas ele também tem outras funcionalidades, como por exemplo criar 
+            mais de um mesmo container possibilitando assim a escalabilidade da aplicação.
+          </p>
+          <p><strong>ReplicaSet</strong></p>
+          <p>O ReplicaSet é uma funcionalidade do Kubernetes na qual posso definir quantas réplicas de um mesmo container o 
+            Kubernetes deve criar para a minha aplicação.
+          </p>
+          <p><strong>LoadBalance</strong></p>
+          <p>O LoadBalancer é outra funcionalidade do Kubernetes, ele é responsável por dividir a carga de responder requisições 
+            entre as diversas réplicas do container criadas pelo Kubernetes.
+          </p>
+          <p><strong>Cluster Kubernetes</strong></p>
+          <p>O cluster Kubernetes é formado por dois tipos de máquinas, Control Planes e Worker Nodes.<br /><br />
+            <ul>
+              <li><i>Control Plane:</i> Responsável por gerir Worker Nodes. É necessário ter mais de um Control Plane no cluster 
+                Kubernetes para garantir a resiliência. Um Control Plane é formado por quatro serviços: O Kube API Server, 
+                o Kube Scheduler, um ETCD e o Kube Controller Manager como mostra a figura abaixo.
+                <div class="image-container">
+                  <img src="../../images/img1.png" alt="Arquitetura de um Control Plane">
+                </div>
+              </li>
+              <li><i>Worker Node:</i> É responsável por executar os containers.</li>
+            </ul>
+          </p>
         </div>
       </div>
     </main>

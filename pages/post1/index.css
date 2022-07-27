@@ -3,3 +3,22 @@
 .content > p {
   margin-top: 20px;
 }
+
+.content > ul {
+  list-style: none;
+}
+
+.content > ul > li {
+  margin-bottom: 10px;
+}
+
+.image-container {
+  width: 350px;
+  height: 300px;
+  margin: 20px 10px;
+}
+
+.image-container > img {
+  width: 100%;
+  height: 100%;
+}
